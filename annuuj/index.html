@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1316348750305016');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=&ev=PageView&1316348750305016noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>6CLUB BY ANUJ</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+html,body{
+    min-height:100%;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#070814;
+    color:#fff;
+}
+
+body{
+    overflow-x:hidden;
+    position:relative;
+}
+
+/* Premium background */
+body::before{
+    content:"";
+    position:fixed;
+    inset:-25%;
+    background:
+      radial-gradient(circle at 50% 25%,rgba(126,70,255,.42),transparent 28%),
+      radial-gradient(circle at 15% 75%,rgba(93,35,190,.25),transparent 25%),
+      radial-gradient(circle at 85% 85%,rgba(190,35,100,.18),transparent 25%);
+    filter:blur(18px);
+    pointer-events:none;
+}
+
+.stars{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:.75;
+    background-image:
+      radial-gradient(circle at 12% 14%,#fff 0 1px,transparent 2px),
+      radial-gradient(circle at 73% 12%,#fff 0 1px,transparent 2px),
+      radial-gradient(circle at 91% 34%,#fff 0 1px,transparent 2px),
+      radial-gradient(circle at 19% 39%,#fff 0 1px,transparent 2px),
+      radial-gradient(circle at 83% 64%,#fff 0 1px,transparent 2px),
+      radial-gradient(circle at 8% 72%,#fff 0 1px,transparent 2px),
+      radial-gradient(circle at 54% 79%,#fff 0 1px,transparent 2px);
+}
+
+.container{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:430px;
+    min-height:100vh;
+    margin:0 auto;
+    padding:18px 18px 20px;
+    text-align:center;
+}
+
+/* Live pill */
+.live{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:9px 23px;
+    border-radius:30px;
+    color:#ff4f91;
+    font-weight:800;
+    letter-spacing:1px;
+    background:rgba(255,35,120,.10);
+    border:1px solid rgba(255,48,130,.45);
+    box-shadow:0 0 22px rgba(255,40,130,.14);
+}
+
+.live-dot{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#ff3f88;
+    box-shadow:0 0 10px #ff3f88;
+    animation:pulse 1.2s infinite;
+}
+
+@keyframes pulse{
+    50%{transform:scale(1.45);opacity:.55}
+}
+
+/* Clickable photo */
+.photo-link{
+    display:block;
+    width:214px;
+    height:214px;
+    margin:22px auto 20px;
+    border-radius:50%;
+    padding:8px;
+    background:linear-gradient(135deg,#a96cff,#6d45ff,#d76bff);
+    box-shadow:
+      0 0 0 6px rgba(135,81,255,.16),
+      0 0 45px rgba(126,70,255,.55);
+    transition:.2s ease;
+}
+
+.photo-link:active{transform:scale(.97)}
+
+.photo{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    background:#fff;
+}
+
+/* Main heading */
+h1{
+    font-family:"Arial Black",Arial,sans-serif;
+    font-size:clamp(38px,10.2vw,46px);
+    line-height:1.02;
+    letter-spacing:1px;
+    margin-bottom:14px;
+    background:linear-gradient(180deg,#fff 0%,#e8ccff 45%,#c795ff 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    text-shadow:0 8px 30px rgba(173,111,255,.20);
+}
+
+.tagline{
+    font-size:16px;
+    color:#aaa7b9;
+    letter-spacing:.2px;
+    margin-bottom:22px;
+}
+
+/* Join buttons */
+.join{
+    width:100%;
+    min-height:68px;
+    border:1px solid rgba(157,83,255,.85);
+    border-radius:24px;
+    background:
+      linear-gradient(110deg,rgba(32,43,82,.82),rgba(45,34,91,.72));
+    color:#fff;
+    font-size:clamp(20px,5vw,27px);
+    font-weight:900;
+    letter-spacing:.5px;
+    cursor:pointer;
+    margin-bottom:15px;
+    box-shadow:
+      inset 0 0 28px rgba(126,72,255,.12),
+      0 0 20px rgba(116,60,255,.10);
+    transition:.18s ease;
+}
+
+.join:active{
+    transform:scale(.985);
+}
+
+/* Timer glass card */
+.timer-card{
+    margin-top:12px;
+    padding:27px 15px 25px;
+    border-radius:30px;
+    border:1px solid rgba(170,170,210,.20);
+    background:
+      linear-gradient(135deg,rgba(32,34,62,.72),rgba(65,32,83,.54));
+    box-shadow:
+      inset 0 0 45px rgba(255,255,255,.025),
+      0 10px 40px rgba(0,0,0,.20);
+    backdrop-filter:blur(14px);
+}
+
+.timer-title{
+    color:#ffd43b;
+    font-size:clamp(15px,3.8vw,20px);
+    font-weight:900;
+    letter-spacing:2px;
+    margin-bottom:13px;
+}
+
+.timer{
+    font-size:clamp(43px,11vw,65px);
+    line-height:1;
+    font-weight:950;
+    letter-spacing:1px;
+    margin-bottom:15px;
+}
+
+.timer-text{
+    color:#b9b6c4;
+    font-size:clamp(15px,4vw,20px);
+    line-height:1.5;
+}
+
+/* Stats */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    margin:34px 0 40px;
+}
+
+.stat{
+    padding:0 12px;
+    border-right:1px solid rgba(255,255,255,.13);
+}
+
+.stat:last-child{border-right:0}
+
+.stat strong{
+    display:block;
+    font-size:clamp(25px,6vw,36px);
+    color:#ffb733;
+    font-weight:950;
+}
+
+.stat span{
+    display:block;
+    margin-top:5px;
+    color:#888596;
+    font-size:clamp(11px,3vw,16px);
+    letter-spacing:1px;
+}
+
+/* Footer */
+footer{
+    color:#777582;
+    font-size:14px;
+    line-height:2;
+    padding-bottom:8px;
+}
+
+footer b{
+    color:#9b96aa;
+}
+
+/* Pixel placeholder area */
+.pixel-space{
+    min-height:1px;
+    width:100%;
+}
+</style>
+</head>
+
+<body>
+<div class="stars"></div>
+
+<main class="container">
+
+    <div class="live">
+        <span class="live-dot"></span>
+        LIVE NOW
+    </div>
+
+    <!-- Replace logo.png with your own photo/logo -->
+    <a class="photo-link" href="https://t.me/+9aHqz8lxLEc4MmJl" aria-label="Join Now">
+        <img class="photo" src="logo.png" alt="6CLUB BY ANUJ">
+    </a>
+
+    <h1>6CLUB BY ANUJ</h1>
+
+    <div class="tagline">Your Premium Gaming Destination 🎰</div>
+
+    <!-- First JOIN NOW button -->
+    <button class="join" onclick="joinNow()">JOIN NOW</button>
+
+    <!-- Second JOIN NOW button -->
+    <button class="join" onclick="joinNow()">JOIN NOW</button>
+
+    <section class="timer-card">
+        <div class="timer-title">TIME LEFT FOR FREE JOIN</div>
+        <div class="timer" id="timer">00:05</div>
+        <div class="timer-text">Offer starts counting down as soon as you open the page.</div>
+    </section>
+
+    <div class="stats">
+        <div class="stat">
+            <strong>50K+</strong>
+            <span>MEMBERS</span>
+        </div>
+        <div class="stat">
+            <strong>24/7</strong>
+            <span>SUPPORT</span>
+        </div>
+        <div class="stat">
+            <strong>100%</strong>
+            <span>SECURE</span>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 All rights reserved.<br>
+        <b>6CLUB BY ANUJ</b>
+    </footer>
+
+    <!-- Pixel space reserved here -->
+    <div class="pixel-1316348750305016" id="pixel-1316348750305016"></div>
+</main>
+
+<script>
+const redirectURL = "https://t.me/+9aHqz8lxLEc4MmJl";
+
+let timeLeft = 500;
+const timer = document.getElementById("timer");
+
+const countdown = setInterval(() => {
+    timeLeft--;
+
+    timer.textContent = "00:" + String(timeLeft).padStart(2, "0");
+
+    if (timeLeft <= 0) {
+        clearInterval(countdown);
+        window.location.href = redirectURL;
+    }
+}, 1000);
+
+function joinNow() {
+    window.location.href = redirectURL;
+}
+</script>
+</body>
+</html>
